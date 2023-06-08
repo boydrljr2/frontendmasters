@@ -1,0 +1,48 @@
+/* first css */
+ 
+body {
+    font-family :    Arial, Helvetica, sans-serif;
+    background-color: beige; 
+}
+
+h1 {
+    border: 5px solid grey;
+}
+
+blockquote {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+cite {
+    font-size: .9rem;
+}
+
+
+.catpic {
+    border: 10px solid indianred;
+}
+
+.cat {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+                'Lucida Grande', 'Lucida Sans', 
+                Arial, sans-serif;
+    color: indianred;
+}
+
+ol li {
+    color: blue;
+}
+
+a:link {
+    color:blue
+}
+
+a:visited {
+    color:black
+}
+
+a:hover {
+    color:orange;
+    font-weight:bolder
+}
