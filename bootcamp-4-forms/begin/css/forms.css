@@ -21,9 +21,8 @@ body {
 
 }
 .wrapper {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
-	padding: 1em;
 	display: flex;
 	flex-flow: row nowrap;
 }
@@ -40,11 +39,6 @@ header {
 	background-image: url(../img/galaxy.jpg);
 	font-size: 2rem;
 	text-align: center;
-}
-
-p {
-	margin-bottom: 0;
-	margin-top: 2rem;
 }
 
 h1, h2, h3, legend {
@@ -65,7 +59,7 @@ legend {
 }
 
 label {
-	display: block;
+	display: block; 
 	margin: .5rem 0;
 }
 
