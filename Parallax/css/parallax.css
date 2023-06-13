@@ -1,0 +1,70 @@
+:root {
+	--main-text-color: #0D0D0D;
+	--border-color: #A68572;
+	--header-color: #FF931A;
+	--accent-yellow: #Fff9bF;
+	--button-blue: #049DD9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Mynerve, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header {
+    padding: 2rem;
+}
+
+fieldset {
+	border: solid 2px var(--border-color);
+	border-radius: 10px;
+	margin: 0.5rem 0;
+	padding: .5rem;
+    background-color: white;
+}
+
+h1, h2, h3, legend {
+	font-family: Chokokutai, cursive, serif;
+	color: var(--header-color);
+}
+
+h1 {
+	text-shadow: 2px 2px 2px var(--accent-yellow);	
+	font-size: 2rem;
+}
+
+legend {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: var(--header-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax {
+    background-image: url("../img/galaxy.jpg");
+}
+
+.text-bloc p {
+    margin: 25px;
+    font-size: 2rem;
+}
+
+
+
