@@ -28,7 +28,8 @@ section {
 }
 
 .wrapper {
-    width: 400px;
+    margin: 20px auto;
+    width: 300px;
     color: var(--result-color);
     background-color: var(--background-color);
 }
