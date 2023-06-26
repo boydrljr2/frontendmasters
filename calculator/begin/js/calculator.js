@@ -19,6 +19,7 @@ function rerender() {
 }
 
 function buttonClick(value) {
+  debugger;
   if (isNaN(parseInt(value))) {
     handleSymbol(value);
   } else {
@@ -28,6 +29,7 @@ function buttonClick(value) {
 }
 
 function handleNumber(value) {
+  debugger;
   if (buffer === "0") {
     buffer = value;
   } else {
@@ -36,6 +38,7 @@ function handleNumber(value) {
 }
 
 function handleMath(value) {
+  debugger;
   if (buffer === "0") {
     // do nothing
     return;
@@ -54,6 +57,7 @@ function handleMath(value) {
 }
 
 function flushOperation(intBuffer) {
+  debugger;
   if (previousOperator === "+") {
     runningTotal += intBuffer;
   } else if (previousOperator === "-") {
@@ -66,6 +70,7 @@ function flushOperation(intBuffer) {
 }
 
 function handleSymbol(symbol) {
+  debugger;
   switch (symbol) {
     case "C":
       buffer = "0";
