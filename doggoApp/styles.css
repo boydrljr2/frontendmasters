@@ -1,0 +1,60 @@
+/* Always start with box-sizing */
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Write css for the appHeader class so that it is a flex container
+for the appTitle and appBreedSelect elements.
+Give appHeader a gray border.
+Give appTitle a flex-basis of 70% and appBreedSelect a flex-basis of 30%.
+Vertically center appTitle and appBreedSelect.
+Make appBreedSelect height only as tall as the select element.
+*/
+.appHeader {
+    display: flex;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+.title {
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+.breedSelect {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.doggoImage {
+    border: 1px solid darkgray;
+    background-color: beige;
+}
+
+/* Write css for the img inside the doggoDisplay class so that it is
+centered horizontally, 
+centered vertically, 
+has a maximum height of 600px,
+has a lightgray border,
+padding of 1rem,
+margin of 1rem.
+*/
+.doggoImage img {
+    display: block;
+    margin: 1rem auto;
+    max-height: 600px;
+    border: 1px solid lightgray;
+    padding: 1rem;
+}

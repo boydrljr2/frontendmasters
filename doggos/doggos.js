@@ -1,21 +1,38 @@
-const DOG_URL = "https://dog.ceo/api/breeds/image/random";
+const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
 
-const promise = fetch(DOG_URL);
-const doggos = document.querySelector(".doggos");
+const ICOSwiper = new Swiper('.swiper', {
 
-promise
-  .then(function(response) {
-    const processingPromise = response.json();
-    return processingPromise;
-  })
-  .then(function(processedResponse) {
-    const img=document.createElement("img");
-    const subtitle=document.createElement("p");
-    img.src = processedResponse.message;
-    img.alt = "Cute doggo";
-    subtitle.innerHTML = processedResponse.message; 
-    doggos.appendChild(img);
-    doggos.appendChild(subtitle);
-  });
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'fade',
+    
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+});
+
+function moreDoggo(){   
+    fetch(BREEDS_URL)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+            const img = document.createElement("img");
+            img.src = data.message;
+            img.alt = data.message;
+            document.querySelector(".doggos").appendChild(img);
+        });
+}
+
+document.querySelector(".more-dog").addEventListener("click", moreDoggo);
 
 console.log("this will log first...");

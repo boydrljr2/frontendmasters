@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Doggos</title>
+    <meta http-equiv="Content-Type" content="text-html"; charset="UTF-8">
+    <title>Swiper Dogs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.css"/>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>Doggos</h1>
-    <div class="doggos">
 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- Doggos promised image goes here -->
+                <div class="doggos"></div>
+            </div>
+        </div>
     </div>
-    <script src="./doggos.js"></script>
+
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Swiper Navigation buttons-->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <button class="more-dog">Next...</button>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./doggos.js"></script>
 </html>

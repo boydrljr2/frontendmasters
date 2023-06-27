@@ -4,7 +4,7 @@ const ICOSwiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    effect: 'flip',
+    effect: 'fade',
     
     // If we need pagination
     pagination: {
