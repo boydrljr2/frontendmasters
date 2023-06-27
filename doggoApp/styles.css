@@ -23,18 +23,25 @@ Make appBreedSelect height only as tall as the select element.
 }
 
 .title {
-    flex-basis: 70%;
+    flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
     margin-left: 1rem;
 }
 
+.breedSelectLabel {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .breedSelect {
     flex-basis: 30%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     margin-right: 1rem;
 }
 

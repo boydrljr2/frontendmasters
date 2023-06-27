@@ -21,7 +21,7 @@ fetch (BREEDS_URL)
         const breedsObject = data.message;
         breedsArray = Object.keys(breedsObject);
         console.log("breedsArray: ", breedsArray);
-        let options = "";
+        let options = "<option value=''>Pick a breed</option>";
         for (let i=0; i < breedsArray.length; i++){
             options += 
                 '<option value=' + breedsArray[i] + '>' + breedsArray[i] + '</option>';
