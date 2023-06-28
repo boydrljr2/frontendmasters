@@ -36,10 +36,6 @@ nav {
     font-size: 1.25rem;
 }
 
-.dog-image {
-    display: none;
-}
-
 .dog-viewer {
     background-color: var(--doggo-background-color);
     display: flex;
@@ -52,6 +48,7 @@ nav {
 .dog-image {
     height: 600px;
     width: auto;
+    display: none;
 }
 
 .loading-spinner {
