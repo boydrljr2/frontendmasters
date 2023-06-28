@@ -1,5 +1,5 @@
 const BREEDS_URL = "https://dog.ceo/api/breeds/list/all";
-const DOGIMAGE_URL = "https://dog.ceo/api/breeds/image/random";
+const RANDOMDOGIMAGE_URL = "https://dog.ceo/api/breeds/image/random";
 
 const breedList = document.getElementById("breed-list");
 const dogImage = document.getElementById("dog-image");
@@ -15,7 +15,7 @@ async function initialize() {
     const breedsArray = Object.keys(responseJSON.message);
 
     /* For each string in the array create an <option> element and append to options*/
-    let breedOptions = "";
+    let breedOptions = "<option value='random'>Random Doggo</option>";
     for (let i=0; i<breedsArray.length; i++) {
         let breedName = breedsArray[i].charAt(0).toUpperCase() + breedsArray[i].slice(1);
         breedOptions += `<option value=${breedsArray[i]}>${breedName}</option>`;
@@ -25,7 +25,7 @@ async function initialize() {
     breedList.innerHTML = breedOptions;
 
     /* get a random dog image to start */
-    const randomDogImage = await fetch(DOGIMAGE_URL);
+    const randomDogImage = await fetch(RANDOMDOGIMAGE_URL);
     const randomDogImageJSON = await randomDogImage.json();
     dogImage.src = randomDogImageJSON.message;
 
@@ -41,6 +41,7 @@ initialize();
 
 async function handleBreedSelect(event) {
     const breedSelected = event.target.value;
+    let response;
 
     /* hide the current dog image */
     dogImage.classList.remove("show");
@@ -48,7 +49,13 @@ async function handleBreedSelect(event) {
     loadingSpinner.classList.add("show");
 
     /* fetch the image for the selected breed */
-    const response = await fetch(`https://dog.ceo/api/breed/${breedSelected}/images/random`);
+    if (breedSelected === "random") {
+        response = await fetch(RANDOMDOGIMAGE_URL);
+    } else {
+        response = await fetch(`https://dog.ceo/api/breed/${breedSelected}/images/random`);
+    }
+ 
+    /* set responseJSON to the response.json() */
     const responseJSON = await response.json();
 
     /* set dogImage.src to the new image */
