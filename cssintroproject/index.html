@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.goggleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" 
+    >
+</head>
+<body>
+    <nav class="main-nav">
+        <h1>
+          <img
+            src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+            alt="coffee masters logo"
+            class="logo"
+          />
+          Coffee Masters
+        </h1>
+    </nav>
+    <div class="checkout-page"> 
+        <section class="checkout-order box">
+            <div class="checkout-order-items-title">
+                <h4>ITEMS</h4>
+            </div>
+            <ul class="checkout-order-items-list">
+                <li class="checkout-order-item">
+                    <div class="checkout-order-item-qty">
+                        <p>1x</p>
+                    </div>
+                    <div class="checkout-order-item-description">
+                        <div class="checkout-order-item-name">
+                            <p>Cappuccino</p>
+                        </div>
+                        <ul class="checkout-order-item-options-list">
+                            <li class="checkout-order-item-option">Lite foam</li>
+                        </ul>
+                    </div>
+                    <div class="checkout-order-item-price">
+                        <p>$3.35</p>
+                    </div>
+                </li>
+                <li class="checkout-order-item">
+                    <div class="checkout-order-item-qty">
+                        <p>1x</p>
+                    </div>
+                    <div class="checkout-order-item-description">
+                        <div class="checkout-order-item-name">
+                            <p>Cappuccino</p>
+                        </div>
+                        <ul class="checkout-order-item-options-list">
+                            <li class="checkout-order-item-option">Double espresso</li>
+                            <li class="checkout-order-item-option">Whole milk</li>
+                            <li class="checkout-order-item-option">Whip cream</li>
+                        </ul>
+                    </div>
+                    <div class="checkout-order-item-price">
+                        <p>$7.90</p>
+                    </div>
+                </li>
+                <li class="checkout-order-item">
+                    <div class="checkout-order-item-qty">
+                        <p>12x</p>
+                    </div>
+                    <div class="checkout-order-item-description">
+                        <div class="checkout-order-item-name">
+                            <p>Chocolate Croissant</p>
+                        </div>
+                        <ul class="checkout-order-item-options-list">
+                            <li class="checkout-order-item-option">French butter</li>
+                            <li class="checkout-order-item-option">Frambroise</li>
+                            <li class="checkout-order-item-option">Heated</li>
+                        </ul>
+                    </div>
+                    <div class="checkout-order-item-price">
+                        <p>$24.90</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="checkout-payment">
+            <div class="checkout-payment-name box">
+                <h4 class="checkout-payment-title">NAME</h4>
+                <div class="input-group">
+                    <label class="input-label" for="name">Name for Order</label>
+                    <input type="text" class="input-text" id="name">
+                </div>
+            </div>
+            <div class="checkout-payment-card box">
+                <h4 class="checkout-payment-title">PAYMENT</h4>
+                <div class="input-group">
+                    <label class="input-label" for="card">Card number</label>
+                    <input type="text" class="input-text" id="card">
+                </div>
+                <div class="input-group">
+                    <label class="input-label" for="ccv">CCV number</label>
+                    <input type="text" class="input-text short-input" id="ccv">
+                </div>
+            </div>
+        </section>
+        <section class="checkout-total">
+            <div class="checkout-total-line">
+                <p>Subtotal:</p>
+                <p>$36.15</p>
+            </div>
+            <div class="checkout-total-line">
+                <p>Tax:</p>
+                <p>$3.82</p>
+            </div>
+            <div class="checkout-total-line">
+                <p> Total:</p>                          
+                <p>$39.97</p>
+            </div>
+        </section>
+        <div class="checkout-confirm">
+            <button class="checkout-button">Place Order</button>
+        </div>
+    </div>
+</body>
+</html>
